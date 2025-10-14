@@ -1,15 +1,12 @@
 import os
 import json
 import ast
-import mysql.connector
+from database_connection import get_connection
+
 
 #   Database Connection
-db_connection = mysql.connector.connect(
-    host="localhost",
-    user="root",
-    password="Developer123",   
-    database="inato_data"
-)
+
+db_connection = get_connection()
 cursor = db_connection.cursor()
 
 cursor.execute("""

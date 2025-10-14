@@ -1,7 +1,7 @@
 import ast
 
 
-data = "{'name': 'Bob', 'age': 30, 'city': 'New York'}"
+data = "{'name': 'anil', 'age': 30, 'city': 'India'}"
 
 # thats how we convert the string to a dictionary
 try:

@@ -1,6 +1,8 @@
 -- “Calculate the ratio of applications for oncology trials to the total number of applications for each Academic site.”
 
-SELECT     site_name,     SUM(therapeutic_area = 'Oncology') / COUNT(*) AS oncology_rate FROM application WHERE site_category = 'Academic' GROUP BY site_name;
+SELECT  site_name,     
+SUM(therapeutic_area = 'Oncology') / COUNT(*) AS oncology_rate 
+FROM application WHERE site_category = 'Academic' GROUP BY site_name;
 
 WITH first_app AS (
     SELECT site_name, MIN(created_at) AS first_date

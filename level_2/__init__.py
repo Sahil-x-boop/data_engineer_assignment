@@ -3,7 +3,7 @@ import json
 import ast
 import mysql.connector
 
-#   == Database Conncetion
+#   Database Connection
 db_connection = mysql.connector.connect(
     host="localhost",
     user="root",

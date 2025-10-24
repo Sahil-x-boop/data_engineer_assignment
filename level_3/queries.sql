@@ -9,8 +9,6 @@ WITH first_app AS (
     FROM application
     GROUP BY site_name
 )
-
-
 SELECT a.site_name
 FROM application a
 JOIN first_app f

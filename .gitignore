@@ -27,3 +27,5 @@ level_2/database_connection.py
 applications/
 # macOS system files
 .DS_Store
+rough_work.py
+sample/

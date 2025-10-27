@@ -1,0 +1,26 @@
+# 🧠 Python Cache & Compiled Files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 🧩 Processed and Temporary Data
+processed/
+*.log
+processed_files.log
+cron.log
+pipeline.log
+
+# 🗄️ Database Credentials (security!)
+.my.cnf
+level_2/database_connection.py
+
+# ⚙️ Environment & IDE Settings
+.env
+.vscode/
+.idea/
+.DS_Store
+
+# 🧱 Backup or Misc Files
+*.bak
+*.tmp

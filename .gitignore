@@ -25,3 +25,5 @@ level_2/database_connection.py
 *.bak
 *.tmp
 applications/
+# macOS system files
+.DS_Store

@@ -24,3 +24,4 @@ level_2/database_connection.py
 # 🧱 Backup or Misc Files
 *.bak
 *.tmp
+applications/

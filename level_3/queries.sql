@@ -17,4 +17,4 @@ WHERE a.created_at BETWEEN f.first_date AND f.first_date + INTERVAL 14 DAY
 GROUP BY a.site_name
 HAVING COUNT(*) >= 10;
 
---run via this =>  mysql -u root -p inato_data < queries.sql
+

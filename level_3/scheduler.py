@@ -1,19 +1,39 @@
 import subprocess
 from datetime import datetime
+import os
 
-print(f"\n[{datetime.now()}] Starting automated pipeline...")
+BASE_DIR = "/home/developer/Workspace_Projects/data_engineer_assignment"
+LEVEL1 = os.path.join(BASE_DIR, "level_1", "process_raw.py")
+LEVEL2 = os.path.join(BASE_DIR, "level_2", "insert_into_database.py")
+QUERY_SQL = os.path.join(BASE_DIR, "level_3", "queries.sql")
+LOG_FILE = os.path.join(BASE_DIR, "level_3", "pipeline.log")
 
-subprocess.run(["python3", "/home/developer/Workspace_Projects/data_engineer_assignment/level_1/solution.py"])
+def log(msg):
+    with open(LOG_FILE, "a") as f:
+        f.write(f"[{datetime.datetime.now()}] {msg}\n")
 
-subprocess.run(["python3", "/home/developer/Workspace_Projects/data_engineer_assignment/level_2/solution.py"])
+def run_command(cmd):
+    try:
+        result = subprocess.run(cmd, capture_output=True, text=True, check=True)
+        log(result.stdout)
+    except subprocess.CalledProcessError as e:
+        log(f"ERROR: {e.stderr}")
 
-print(f"[{datetime.now()}] Running query.sql...")
-subprocess.run([
-    "mysql",
-    "-u", "root",
-    "-pHarman@123",
-    "inato_data",
-    "-e", "source /home/developer/Workspace_Projects/data_engineer_assignment/level_3/queries.sql"
-])
+log("Starting automated pipeline...")
 
-print(f"[{datetime.now()}] Pipeline completed successfully!\n")
+# Level 1
+subprocess.run(["/home/developer/.pyenv/shims/python3", LEVEL1])
+log("All new files converted to JSON")
+
+# Level 2
+subprocess.run(["/home/developer/.pyenv/shims/python3", LEVEL2])
+log("All new data inserted successfully!")
+
+# Run SQL queries using .my.cnf credentials
+try:
+    subprocess.run(["mysql", "inato_data", "-e", f"source {QUERY_SQL}"], check=True)
+    log("Query.sql executed successfully")
+except subprocess.CalledProcessError as e:
+    log(f"SQL ERROR: {e}")
+
+log("Pipeline completed successfully!\n")

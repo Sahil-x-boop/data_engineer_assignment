@@ -1,635 +1,5 @@
-python3: can't open file '/home/developer/level1_process_raw.py': [Errno 2] No such file or directory
-python3: can't open file '/home/developer/level2_insert_db.py': [Errno 2] No such file or directory
-ERROR 1045 (28000): Access denied for user 'developer'@'localhost' (using password: NO)
-
-[2025-10-24 18:09:01.837971] Starting automated pipeline...
-[2025-10-24 18:09:01.869283] Running query.sql...
-[2025-10-24 18:09:01.919760] Pipeline completed successfully!
-
-python3: can't open file '/home/developer/level1_process_raw.py': [Errno 2] No such file or directory
-python3: can't open file '/home/developer/level2_insert_db.py': [Errno 2] No such file or directory
-ERROR 1045 (28000): Access denied for user 'developer'@'localhost' (using password: NO)
-
-[2025-10-24 18:10:02.007023] Starting automated pipeline...
-[2025-10-24 18:10:02.033922] Running query.sql...
-[2025-10-24 18:10:02.039125] Pipeline completed successfully!
-
-python3: can't open file '/home/developer/level1_process_raw.py': [Errno 2] No such file or directory
-python3: can't open file '/home/developer/level2_insert_db.py': [Errno 2] No such file or directory
-ERROR 1045 (28000): Access denied for user 'developer'@'localhost' (using password: NO)
-
-[2025-10-24 18:11:01.117685] Starting automated pipeline...
-[2025-10-24 18:11:01.145268] Running query.sql...
-[2025-10-24 18:11:01.167160] Pipeline completed successfully!
-
-python3: can't open file '/home/developer/level1_process_raw.py': [Errno 2] No such file or directory
-python3: can't open file '/home/developer/level2_insert_db.py': [Errno 2] No such file or directory
-ERROR 1045 (28000): Access denied for user 'developer'@'localhost' (using password: NO)
-
-[2025-10-24 18:12:01.437042] Starting automated pipeline...
-[2025-10-24 18:12:01.464077] Running query.sql...
-[2025-10-24 18:12:01.469524] Pipeline completed successfully!
-
-python3: can't open file '/home/developer/solution.py': [Errno 2] No such file or directory
-python3: can't open file '/home/developer/level2_insert_db.py': [Errno 2] No such file or directory
-ERROR 1045 (28000): Access denied for user 'developer'@'localhost' (using password: NO)
-
-[2025-10-24 18:13:01.609144] Starting automated pipeline...
-[2025-10-24 18:13:01.636214] Running query.sql...
-[2025-10-24 18:13:01.641518] Pipeline completed successfully!
-
-python3: can't open file '/solution.py': [Errno 2] No such file or directory
-python3: can't open file '/home/developer/.../solution.py': [Errno 2] No such file or directory
-ERROR 1045 (28000): Access denied for user 'developer'@'localhost' (using password: NO)
-
-[2025-10-24 18:14:01.756620] Starting automated pipeline...
-[2025-10-24 18:14:01.783521] Running query.sql...
-[2025-10-24 18:14:01.789034] Pipeline completed successfully!
-
-python3: can't open file '/home/developer/data_engineer_assignment/level_1/solution.py': [Errno 2] No such file or directory
-python3: can't open file '/home/developer/.../solution.py': [Errno 2] No such file or directory
-ERROR 1045 (28000): Access denied for user 'developer'@'localhost' (using password: NO)
-
-[2025-10-24 18:15:01.966977] Starting automated pipeline...
-[2025-10-24 18:15:01.994006] Running query.sql...
-[2025-10-24 18:15:01.999271] Pipeline completed successfully!
-
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_1/solution.py", line 9, in <module>
-    os.makedirs(output_folder, exist_ok=True)
-    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "<frozen os>", line 228, in makedirs
-PermissionError: [Errno 13] Permission denied: '../processed'
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_2/solution.py", line 29, in <module>
-    for filename in os.listdir(processed_folder):
-                    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: '../processed'
-ERROR 1045 (28000): Access denied for user 'developer'@'localhost' (using password: NO)
-
-[2025-10-24 18:16:01.106180] Starting automated pipeline...
-[2025-10-24 18:16:01.319624] Running query.sql...
-[2025-10-24 18:16:01.325193] Pipeline completed successfully!
-
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_1/solution.py", line 9, in <module>
-    os.makedirs(output_folder, exist_ok=True)
-    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "<frozen os>", line 228, in makedirs
-PermissionError: [Errno 13] Permission denied: '../processed'
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_2/solution.py", line 29, in <module>
-    for filename in os.listdir(processed_folder):
-                    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: '../processed'
-ERROR 1045 (28000): Access denied for user 'developer'@'localhost' (using password: NO)
-
-[2025-10-24 18:17:01.521015] Starting automated pipeline...
-[2025-10-24 18:17:01.653693] Running query.sql...
-[2025-10-24 18:17:01.665182] Pipeline completed successfully!
-
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_1/solution.py", line 9, in <module>
-    os.makedirs(output_folder, exist_ok=True)
-    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "<frozen os>", line 228, in makedirs
-PermissionError: [Errno 13] Permission denied: '../processed'
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_2/solution.py", line 29, in <module>
-    for filename in os.listdir(processed_folder):
-                    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: '../processed'
-ERROR 1045 (28000): Access denied for user 'developer'@'localhost' (using password: NO)
-
-[2025-10-24 18:18:01.935216] Starting automated pipeline...
-[2025-10-24 18:18:02.069689] Running query.sql...
-[2025-10-24 18:18:02.075147] Pipeline completed successfully!
-
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_1/solution.py", line 9, in <module>
-    os.makedirs(output_folder, exist_ok=True)
-    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "<frozen os>", line 228, in makedirs
-PermissionError: [Errno 13] Permission denied: '../processed'
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_2/solution.py", line 29, in <module>
-    for filename in os.listdir(processed_folder):
-                    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: '../processed'
-ERROR 1045 (28000): Access denied for user 'developer'@'localhost' (using password: NO)
-
-[2025-10-24 18:19:01.259718] Starting automated pipeline...
-[2025-10-24 18:19:01.406883] Running query.sql...
-[2025-10-24 18:19:01.416490] Pipeline completed successfully!
-
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_1/solution.py", line 9, in <module>
-    os.makedirs(output_folder, exist_ok=True)
-    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "<frozen os>", line 228, in makedirs
-PermissionError: [Errno 13] Permission denied: '../processed'
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_2/solution.py", line 29, in <module>
-    for filename in os.listdir(processed_folder):
-                    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: '../processed'
-ERROR 1045 (28000): Access denied for user 'developer'@'localhost' (using password: NO)
-
-[2025-10-24 18:20:01.592942] Starting automated pipeline...
-[2025-10-24 18:20:01.722893] Running query.sql...
-[2025-10-24 18:20:01.728171] Pipeline completed successfully!
-
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_1/solution.py", line 9, in <module>
-    os.makedirs(output_folder, exist_ok=True)
-    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "<frozen os>", line 228, in makedirs
-PermissionError: [Errno 13] Permission denied: '../processed'
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_2/solution.py", line 29, in <module>
-    for filename in os.listdir(processed_folder):
-                    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: '../processed'
-ERROR 1045 (28000): Access denied for user 'developer'@'localhost' (using password: NO)
-
-[2025-10-24 18:21:01.910065] Starting automated pipeline...
-[2025-10-24 18:21:02.041403] Running query.sql...
-[2025-10-24 18:21:02.046679] Pipeline completed successfully!
-
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_1/solution.py", line 9, in <module>
-    os.makedirs(output_folder, exist_ok=True)
-    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "<frozen os>", line 228, in makedirs
-PermissionError: [Errno 13] Permission denied: '../processed'
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_2/solution.py", line 29, in <module>
-    for filename in os.listdir(processed_folder):
-                    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: '../processed'
-ERROR 1045 (28000): Access denied for user 'developer'@'localhost' (using password: NO)
-
-[2025-10-24 18:22:01.194342] Starting automated pipeline...
-[2025-10-24 18:22:01.323020] Running query.sql...
-[2025-10-24 18:22:01.328381] Pipeline completed successfully!
-
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_1/solution.py", line 9, in <module>
-    os.makedirs(output_folder, exist_ok=True)
-    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "<frozen os>", line 228, in makedirs
-PermissionError: [Errno 13] Permission denied: '../processed'
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_2/solution.py", line 29, in <module>
-    for filename in os.listdir(processed_folder):
-                    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: '../processed'
-ERROR 1045 (28000): Access denied for user 'developer'@'localhost' (using password: NO)
-
-[2025-10-24 18:23:01.508643] Starting automated pipeline...
-[2025-10-24 18:23:01.637173] Running query.sql...
-[2025-10-24 18:23:01.642461] Pipeline completed successfully!
-
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_1/solution.py", line 9, in <module>
-    os.makedirs(output_folder, exist_ok=True)
-    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "<frozen os>", line 228, in makedirs
-PermissionError: [Errno 13] Permission denied: '../processed'
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_2/solution.py", line 29, in <module>
-    for filename in os.listdir(processed_folder):
-                    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: '../processed'
-ERROR 1045 (28000): Access denied for user 'developer'@'localhost' (using password: NO)
-
-[2025-10-24 18:24:01.727830] Starting automated pipeline...
-[2025-10-24 18:24:01.863746] Running query.sql...
-[2025-10-24 18:24:01.869019] Pipeline completed successfully!
-
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_1/solution.py", line 9, in <module>
-    os.makedirs(output_folder, exist_ok=True)
-    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "<frozen os>", line 228, in makedirs
-PermissionError: [Errno 13] Permission denied: '../processed'
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_2/solution.py", line 29, in <module>
-    for filename in os.listdir(processed_folder):
-                    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: '../processed'
-ERROR 1045 (28000): Access denied for user 'developer'@'localhost' (using password: NO)
-
-[2025-10-24 18:25:02.054451] Starting automated pipeline...
-[2025-10-24 18:25:02.184278] Running query.sql...
-[2025-10-24 18:25:02.189765] Pipeline completed successfully!
-
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_1/solution.py", line 9, in <module>
-    os.makedirs(output_folder, exist_ok=True)
-    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "<frozen os>", line 228, in makedirs
-PermissionError: [Errno 13] Permission denied: '../processed'
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_2/solution.py", line 29, in <module>
-    for filename in os.listdir(processed_folder):
-                    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: '../processed'
-ERROR 1045 (28000): Access denied for user 'developer'@'localhost' (using password: NO)
-
-[2025-10-24 18:26:01.300956] Starting automated pipeline...
-[2025-10-24 18:26:01.431607] Running query.sql...
-[2025-10-24 18:26:01.436867] Pipeline completed successfully!
-
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_1/solution.py", line 9, in <module>
-    os.makedirs(output_folder, exist_ok=True)
-    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "<frozen os>", line 228, in makedirs
-PermissionError: [Errno 13] Permission denied: '../processed'
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_2/solution.py", line 29, in <module>
-    for filename in os.listdir(processed_folder):
-                    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: '../processed'
-ERROR 1045 (28000): Access denied for user 'developer'@'localhost' (using password: NO)
-
-[2025-10-24 18:27:01.604736] Starting automated pipeline...
-[2025-10-24 18:27:01.731799] Running query.sql...
-[2025-10-24 18:27:01.736843] Pipeline completed successfully!
-
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_1/solution.py", line 9, in <module>
-    os.makedirs(output_folder, exist_ok=True)
-    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "<frozen os>", line 228, in makedirs
-PermissionError: [Errno 13] Permission denied: '../processed'
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_2/solution.py", line 29, in <module>
-    for filename in os.listdir(processed_folder):
-                    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: '../processed'
-ERROR 1045 (28000): Access denied for user 'developer'@'localhost' (using password: NO)
-
-[2025-10-24 18:28:01.904233] Starting automated pipeline...
-[2025-10-24 18:28:02.030887] Running query.sql...
-[2025-10-24 18:28:02.036282] Pipeline completed successfully!
-
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_1/solution.py", line 9, in <module>
-    os.makedirs(output_folder, exist_ok=True)
-    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "<frozen os>", line 228, in makedirs
-PermissionError: [Errno 13] Permission denied: '../processed'
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_2/solution.py", line 29, in <module>
-    for filename in os.listdir(processed_folder):
-                    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: '../processed'
-ERROR 1045 (28000): Access denied for user 'developer'@'localhost' (using password: NO)
-
-[2025-10-24 18:29:01.208722] Starting automated pipeline...
-[2025-10-24 18:29:01.337405] Running query.sql...
-[2025-10-24 18:29:01.342621] Pipeline completed successfully!
-
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_1/solution.py", line 9, in <module>
-    os.makedirs(output_folder, exist_ok=True)
-    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "<frozen os>", line 228, in makedirs
-PermissionError: [Errno 13] Permission denied: '../processed'
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_2/solution.py", line 29, in <module>
-    for filename in os.listdir(processed_folder):
-                    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: '../processed'
-ERROR 1045 (28000): Access denied for user 'developer'@'localhost' (using password: NO)
-
-[2025-10-24 18:30:01.618428] Starting automated pipeline...
-[2025-10-24 18:30:01.747038] Running query.sql...
-[2025-10-24 18:30:01.752192] Pipeline completed successfully!
-
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_1/solution.py", line 9, in <module>
-    os.makedirs(output_folder, exist_ok=True)
-    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "<frozen os>", line 228, in makedirs
-PermissionError: [Errno 13] Permission denied: '../processed'
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_2/solution.py", line 29, in <module>
-    for filename in os.listdir(processed_folder):
-                    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: '../processed'
-ERROR 1045 (28000): Access denied for user 'developer'@'localhost' (using password: NO)
-
-[2025-10-24 18:31:01.908206] Starting automated pipeline...
-[2025-10-24 18:31:02.036764] Running query.sql...
-[2025-10-24 18:31:02.041991] Pipeline completed successfully!
-
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_1/solution.py", line 9, in <module>
-    os.makedirs(output_folder, exist_ok=True)
-    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "<frozen os>", line 228, in makedirs
-PermissionError: [Errno 13] Permission denied: '../processed'
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_2/solution.py", line 29, in <module>
-    for filename in os.listdir(processed_folder):
-                    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: '../processed'
-ERROR 1045 (28000): Access denied for user 'developer'@'localhost' (using password: NO)
-
-[2025-10-24 18:32:01.199017] Starting automated pipeline...
-[2025-10-24 18:32:01.330186] Running query.sql...
-[2025-10-24 18:32:01.335401] Pipeline completed successfully!
-
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_1/solution.py", line 9, in <module>
-    os.makedirs(output_folder, exist_ok=True)
-    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "<frozen os>", line 228, in makedirs
-PermissionError: [Errno 13] Permission denied: '../processed'
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_2/solution.py", line 29, in <module>
-    for filename in os.listdir(processed_folder):
-                    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: '../processed'
-ERROR 1045 (28000): Access denied for user 'developer'@'localhost' (using password: NO)
-
-[2025-10-24 18:33:01.523764] Starting automated pipeline...
-[2025-10-24 18:33:01.654523] Running query.sql...
-[2025-10-24 18:33:01.659895] Pipeline completed successfully!
-
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_1/solution.py", line 9, in <module>
-    os.makedirs(output_folder, exist_ok=True)
-    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "<frozen os>", line 228, in makedirs
-PermissionError: [Errno 13] Permission denied: '../processed'
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_2/solution.py", line 29, in <module>
-    for filename in os.listdir(processed_folder):
-                    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: '../processed'
-ERROR 1045 (28000): Access denied for user 'developer'@'localhost' (using password: NO)
-
-[2025-10-24 18:34:01.836193] Starting automated pipeline...
-[2025-10-24 18:34:01.964557] Running query.sql...
-[2025-10-24 18:34:01.969691] Pipeline completed successfully!
-
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_1/solution.py", line 9, in <module>
-    os.makedirs(output_folder, exist_ok=True)
-    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "<frozen os>", line 228, in makedirs
-PermissionError: [Errno 13] Permission denied: '../processed'
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_2/solution.py", line 29, in <module>
-    for filename in os.listdir(processed_folder):
-                    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: '../processed'
-ERROR 1045 (28000): Access denied for user 'developer'@'localhost' (using password: NO)
-
-[2025-10-24 18:35:02.115428] Starting automated pipeline...
-[2025-10-24 18:35:02.246245] Running query.sql...
-[2025-10-24 18:35:02.251484] Pipeline completed successfully!
-
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_1/solution.py", line 9, in <module>
-    os.makedirs(output_folder, exist_ok=True)
-    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "<frozen os>", line 228, in makedirs
-PermissionError: [Errno 13] Permission denied: '../processed'
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_2/solution.py", line 29, in <module>
-    for filename in os.listdir(processed_folder):
-                    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: '../processed'
-ERROR 1045 (28000): Access denied for user 'developer'@'localhost' (using password: NO)
-
-[2025-10-24 18:36:01.367452] Starting automated pipeline...
-[2025-10-24 18:36:01.504050] Running query.sql...
-[2025-10-24 18:36:01.509224] Pipeline completed successfully!
-
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_1/solution.py", line 9, in <module>
-    os.makedirs(output_folder, exist_ok=True)
-    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "<frozen os>", line 228, in makedirs
-PermissionError: [Errno 13] Permission denied: '../processed'
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_2/solution.py", line 29, in <module>
-    for filename in os.listdir(processed_folder):
-                    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: '../processed'
-ERROR 1045 (28000): Access denied for user 'developer'@'localhost' (using password: NO)
-
-[2025-10-24 18:37:01.654214] Starting automated pipeline...
-[2025-10-24 18:37:01.781440] Running query.sql...
-[2025-10-24 18:37:01.786536] Pipeline completed successfully!
-
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_1/solution.py", line 9, in <module>
-    os.makedirs(output_folder, exist_ok=True)
-    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "<frozen os>", line 228, in makedirs
-PermissionError: [Errno 13] Permission denied: '../processed'
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_2/solution.py", line 29, in <module>
-    for filename in os.listdir(processed_folder):
-                    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: '../processed'
-ERROR 1045 (28000): Access denied for user 'developer'@'localhost' (using password: NO)
-
-[2025-10-24 18:38:01.935826] Starting automated pipeline...
-[2025-10-24 18:38:02.074759] Running query.sql...
-[2025-10-24 18:38:02.081413] Pipeline completed successfully!
-
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_1/solution.py", line 9, in <module>
-    os.makedirs(output_folder, exist_ok=True)
-    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "<frozen os>", line 228, in makedirs
-PermissionError: [Errno 13] Permission denied: '../processed'
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_2/solution.py", line 29, in <module>
-    for filename in os.listdir(processed_folder):
-                    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: '../processed'
-ERROR 1045 (28000): Access denied for user 'developer'@'localhost' (using password: NO)
-
-[2025-10-24 18:39:01.270032] Starting automated pipeline...
-[2025-10-24 18:39:01.401481] Running query.sql...
-[2025-10-24 18:39:01.406749] Pipeline completed successfully!
-
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_1/solution.py", line 9, in <module>
-    os.makedirs(output_folder, exist_ok=True)
-    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "<frozen os>", line 228, in makedirs
-PermissionError: [Errno 13] Permission denied: '../processed'
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_2/solution.py", line 29, in <module>
-    for filename in os.listdir(processed_folder):
-                    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: '../processed'
-ERROR 1045 (28000): Access denied for user 'developer'@'localhost' (using password: NO)
-
-[2025-10-24 18:40:01.526470] Starting automated pipeline...
-[2025-10-24 18:40:01.653829] Running query.sql...
-[2025-10-24 18:40:01.659048] Pipeline completed successfully!
-
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_1/solution.py", line 9, in <module>
-    os.makedirs(output_folder, exist_ok=True)
-    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "<frozen os>", line 228, in makedirs
-PermissionError: [Errno 13] Permission denied: '../processed'
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_2/solution.py", line 29, in <module>
-    for filename in os.listdir(processed_folder):
-                    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: '../processed'
-ERROR 1045 (28000): Access denied for user 'developer'@'localhost' (using password: NO)
-
-[2025-10-24 18:41:01.802765] Starting automated pipeline...
-[2025-10-24 18:41:01.930631] Running query.sql...
-[2025-10-24 18:41:01.935919] Pipeline completed successfully!
-
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_1/solution.py", line 9, in <module>
-    os.makedirs(output_folder, exist_ok=True)
-    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "<frozen os>", line 228, in makedirs
-PermissionError: [Errno 13] Permission denied: '../processed'
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_2/solution.py", line 29, in <module>
-    for filename in os.listdir(processed_folder):
-                    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: '../processed'
-ERROR 1045 (28000): Access denied for user 'developer'@'localhost' (using password: NO)
-
-[2025-10-24 18:42:02.047215] Starting automated pipeline...
-[2025-10-24 18:42:02.175410] Running query.sql...
-[2025-10-24 18:42:02.180563] Pipeline completed successfully!
-
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_1/solution.py", line 9, in <module>
-    os.makedirs(output_folder, exist_ok=True)
-    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "<frozen os>", line 228, in makedirs
-PermissionError: [Errno 13] Permission denied: '../processed'
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_2/solution.py", line 29, in <module>
-    for filename in os.listdir(processed_folder):
-                    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: '../processed'
-ERROR 1045 (28000): Access denied for user 'developer'@'localhost' (using password: NO)
-
-[2025-10-24 18:43:01.475586] Starting automated pipeline...
-[2025-10-24 18:43:01.612655] Running query.sql...
-[2025-10-24 18:43:01.617932] Pipeline completed successfully!
-
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_1/solution.py", line 9, in <module>
-    os.makedirs(output_folder, exist_ok=True)
-    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "<frozen os>", line 228, in makedirs
-PermissionError: [Errno 13] Permission denied: '../processed'
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_2/solution.py", line 29, in <module>
-    for filename in os.listdir(processed_folder):
-                    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: '../processed'
-ERROR 1045 (28000): Access denied for user 'developer'@'localhost' (using password: NO)
-
-[2025-10-24 18:44:01.908638] Starting automated pipeline...
-[2025-10-24 18:44:02.042473] Running query.sql...
-[2025-10-24 18:44:02.048264] Pipeline completed successfully!
-
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_1/solution.py", line 9, in <module>
-    os.makedirs(output_folder, exist_ok=True)
-    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "<frozen os>", line 228, in makedirs
-PermissionError: [Errno 13] Permission denied: '../processed'
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_2/solution.py", line 29, in <module>
-    for filename in os.listdir(processed_folder):
-                    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: '../processed'
-mysql: [Warning] Using a password on the command line interface can be insecure.
-ERROR 1045 (28000): Access denied for user 'developer'@'localhost' (using password: YES)
-
-[2025-10-24 18:45:01.240071] Starting automated pipeline...
-[2025-10-24 18:45:01.380755] Running query.sql...
-[2025-10-24 18:45:01.386902] Pipeline completed successfully!
-
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_1/solution.py", line 9, in <module>
-    os.makedirs(output_folder, exist_ok=True)
-    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "<frozen os>", line 228, in makedirs
-PermissionError: [Errno 13] Permission denied: '../processed'
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_2/solution.py", line 29, in <module>
-    for filename in os.listdir(processed_folder):
-                    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: '../processed'
-mysql: [Warning] Using a password on the command line interface can be insecure.
-ERROR 1045 (28000): Access denied for user 'developer'@'localhost' (using password: YES)
-
-[2025-10-24 18:46:01.571384] Starting automated pipeline...
-[2025-10-24 18:46:01.698347] Running query.sql...
-[2025-10-24 18:46:01.703194] Pipeline completed successfully!
-
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_1/solution.py", line 9, in <module>
-    os.makedirs(output_folder, exist_ok=True)
-    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "<frozen os>", line 228, in makedirs
-PermissionError: [Errno 13] Permission denied: '../processed'
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_2/solution.py", line 29, in <module>
-    for filename in os.listdir(processed_folder):
-                    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: '../processed'
-mysql: [Warning] Using a password on the command line interface can be insecure.
-ERROR 1045 (28000): Access denied for user 'developer'@'localhost' (using password: YES)
-
-[2025-10-24 18:47:01.866112] Starting automated pipeline...
-[2025-10-24 18:47:02.004835] Running query.sql...
-[2025-10-24 18:47:02.010107] Pipeline completed successfully!
-
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_1/solution.py", line 9, in <module>
-    os.makedirs(output_folder, exist_ok=True)
-    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "<frozen os>", line 228, in makedirs
-PermissionError: [Errno 13] Permission denied: '../processed'
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_2/solution.py", line 29, in <module>
-    for filename in os.listdir(processed_folder):
-                    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: '../processed'
-mysql: [Warning] Using a password on the command line interface can be insecure.
-ERROR 1045 (28000): Access denied for user 'developer'@'localhost' (using password: YES)
-
-[2025-10-24 18:48:01.130586] Starting automated pipeline...
-[2025-10-24 18:48:01.271596] Running query.sql...
-[2025-10-24 18:48:01.277244] Pipeline completed successfully!
-
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_1/solution.py", line 9, in <module>
-    os.makedirs(output_folder, exist_ok=True)
-    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "<frozen os>", line 228, in makedirs
-PermissionError: [Errno 13] Permission denied: '../processed'
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_2/solution.py", line 29, in <module>
-    for filename in os.listdir(processed_folder):
-                    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: '../processed'
+python3: can't open file '/home/developer/Workspace_Projects/data_engineer_assignment/level_1/solution.py': [Errno 2] No such file or directory
+python3: can't open file '/home/developer/Workspace_Projects/data_engineer_assignment/level_2/solution.py': [Errno 2] No such file or directory
 mysql: [Warning] Using a password on the command line interface can be insecure.
 site_name	oncology_rate
 New York University Hospital	0.3448
@@ -642,21 +12,12 @@ Lisbon University Hospital
 Miami Health Institute
 ERROR 1064 (42000) at line 20 in file: '/home/developer/Workspace_Projects/data_engineer_assignment/level_3/queries.sql': You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '--run via this =>  mysql -u root -p inato_data < queries.sql' at line 1
 
-[2025-10-24 18:49:01.448431] Starting automated pipeline...
-[2025-10-24 18:49:01.578941] Running query.sql...
-[2025-10-24 18:49:01.590875] Pipeline completed successfully!
+[2025-10-27 19:12:01.712734] Starting automated pipeline...
+[2025-10-27 19:12:01.740410] Running query.sql...
+[2025-10-27 19:12:01.752603] Pipeline completed successfully!
 
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_1/solution.py", line 9, in <module>
-    os.makedirs(output_folder, exist_ok=True)
-    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "<frozen os>", line 228, in makedirs
-PermissionError: [Errno 13] Permission denied: '../processed'
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_2/solution.py", line 29, in <module>
-    for filename in os.listdir(processed_folder):
-                    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: '../processed'
+python3: can't open file '/home/developer/Workspace_Projects/data_engineer_assignment/level_1/solution.py': [Errno 2] No such file or directory
+python3: can't open file '/home/developer/Workspace_Projects/data_engineer_assignment/level_2/solution.py': [Errno 2] No such file or directory
 mysql: [Warning] Using a password on the command line interface can be insecure.
 site_name	oncology_rate
 New York University Hospital	0.3448
@@ -669,21 +30,12 @@ Lisbon University Hospital
 Miami Health Institute
 ERROR 1064 (42000) at line 20 in file: '/home/developer/Workspace_Projects/data_engineer_assignment/level_3/queries.sql': You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '--run via this =>  mysql -u root -p inato_data < queries.sql' at line 1
 
-[2025-10-24 18:50:01.792161] Starting automated pipeline...
-[2025-10-24 18:50:01.932854] Running query.sql...
-[2025-10-24 18:50:01.945872] Pipeline completed successfully!
+[2025-10-27 19:13:02.036006] Starting automated pipeline...
+[2025-10-27 19:13:02.063273] Running query.sql...
+[2025-10-27 19:13:02.075079] Pipeline completed successfully!
 
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_1/solution.py", line 9, in <module>
-    os.makedirs(output_folder, exist_ok=True)
-    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "<frozen os>", line 228, in makedirs
-PermissionError: [Errno 13] Permission denied: '../processed'
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_2/solution.py", line 29, in <module>
-    for filename in os.listdir(processed_folder):
-                    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: '../processed'
+python3: can't open file '/home/developer/Workspace_Projects/data_engineer_assignment/level_1/solution.py': [Errno 2] No such file or directory
+python3: can't open file '/home/developer/Workspace_Projects/data_engineer_assignment/level_2/solution.py': [Errno 2] No such file or directory
 mysql: [Warning] Using a password on the command line interface can be insecure.
 site_name	oncology_rate
 New York University Hospital	0.3448
@@ -696,21 +48,12 @@ Lisbon University Hospital
 Miami Health Institute
 ERROR 1064 (42000) at line 20 in file: '/home/developer/Workspace_Projects/data_engineer_assignment/level_3/queries.sql': You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '--run via this =>  mysql -u root -p inato_data < queries.sql' at line 1
 
-[2025-10-24 18:51:02.126332] Starting automated pipeline...
-[2025-10-24 18:51:02.253867] Running query.sql...
-[2025-10-24 18:51:02.265584] Pipeline completed successfully!
+[2025-10-27 19:14:01.356333] Starting automated pipeline...
+[2025-10-27 19:14:01.383645] Running query.sql...
+[2025-10-27 19:14:01.395483] Pipeline completed successfully!
 
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_1/solution.py", line 9, in <module>
-    os.makedirs(output_folder, exist_ok=True)
-    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "<frozen os>", line 228, in makedirs
-PermissionError: [Errno 13] Permission denied: '../processed'
-Traceback (most recent call last):
-  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_2/solution.py", line 29, in <module>
-    for filename in os.listdir(processed_folder):
-                    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: '../processed'
+python3: can't open file '/home/developer/Workspace_Projects/data_engineer_assignment/level_1/solution.py': [Errno 2] No such file or directory
+python3: can't open file '/home/developer/Workspace_Projects/data_engineer_assignment/level_2/solution.py': [Errno 2] No such file or directory
 mysql: [Warning] Using a password on the command line interface can be insecure.
 site_name	oncology_rate
 New York University Hospital	0.3448
@@ -723,7 +66,162 @@ Lisbon University Hospital
 Miami Health Institute
 ERROR 1064 (42000) at line 20 in file: '/home/developer/Workspace_Projects/data_engineer_assignment/level_3/queries.sql': You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '--run via this =>  mysql -u root -p inato_data < queries.sql' at line 1
 
-[2025-10-24 18:52:01.445199] Starting automated pipeline...
-[2025-10-24 18:52:01.586044] Running query.sql...
-[2025-10-24 18:52:01.598859] Pipeline completed successfully!
+[2025-10-27 19:15:01.676738] Starting automated pipeline...
+[2025-10-27 19:15:01.704106] Running query.sql...
+[2025-10-27 19:15:01.715868] Pipeline completed successfully!
+
+python3: can't open file '/home/developer/Workspace_Projects/data_engineer_assignment/level_1/solution.py': [Errno 2] No such file or directory
+python3: can't open file '/home/developer/Workspace_Projects/data_engineer_assignment/level_2/solution.py': [Errno 2] No such file or directory
+mysql: [Warning] Using a password on the command line interface can be insecure.
+site_name	oncology_rate
+New York University Hospital	0.3448
+Lisbon University Hospital	0.3452
+site_name
+Lyon Medical Center
+New York University Hospital
+Los Angeles
+Lisbon University Hospital
+Miami Health Institute
+ERROR 1064 (42000) at line 20 in file: '/home/developer/Workspace_Projects/data_engineer_assignment/level_3/queries.sql': You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '--run via this =>  mysql -u root -p inato_data < queries.sql' at line 1
+
+[2025-10-27 19:16:01.955233] Starting automated pipeline...
+[2025-10-27 19:16:01.982651] Running query.sql...
+[2025-10-27 19:16:01.994792] Pipeline completed successfully!
+
+python3: can't open file '/home/developer/Workspace_Projects/data_engineer_assignment/level_1/solution.py': [Errno 2] No such file or directory
+python3: can't open file '/home/developer/Workspace_Projects/data_engineer_assignment/level_2/solution.py': [Errno 2] No such file or directory
+mysql: [Warning] Using a password on the command line interface can be insecure.
+site_name	oncology_rate
+New York University Hospital	0.3448
+Lisbon University Hospital	0.3452
+site_name
+Lyon Medical Center
+New York University Hospital
+Los Angeles
+Lisbon University Hospital
+Miami Health Institute
+ERROR 1064 (42000) at line 20 in file: '/home/developer/Workspace_Projects/data_engineer_assignment/level_3/queries.sql': You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '--run via this =>  mysql -u root -p inato_data < queries.sql' at line 1
+
+[2025-10-27 19:17:02.266982] Starting automated pipeline...
+[2025-10-27 19:17:02.294416] Running query.sql...
+[2025-10-27 19:17:02.306322] Pipeline completed successfully!
+
+Traceback (most recent call last):
+  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_3/scheduler.py", line 10, in <module>
+    print(f"\n[{datetime.now()}] Starting automated pipeline...")
+                ^^^^^^^^^^^^
+AttributeError: module 'datetime' has no attribute 'now'
+Traceback (most recent call last):
+  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_3/scheduler.py", line 10, in <module>
+    print(f"\n[{datetime.now()}] Starting automated pipeline...")
+                ^^^^^^^^^^^^
+AttributeError: module 'datetime' has no attribute 'now'
+  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_3/scheduler.py", line 16
+    def run_c
+             ^
+SyntaxError: expected '('
+  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_3/scheduler.py", line 19
+    log
+SyntaxError: expected 'except' or 'finally' block
+Traceback (most recent call last):
+  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_3/scheduler.py", line 10, in <module>
+    print(f"\n[{datetime.now()}] Starting automated pipeline...")
+                ^^^^^^^^^^^^
+AttributeError: module 'datetime' has no attribute 'now'
+Traceback (most recent call last):
+  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_3/scheduler.py", line 10, in <module>
+    print(f"\n[{datetime.now()}] Starting automated pipeline...")
+                ^^^^^^^^^^^^
+AttributeError: module 'datetime' has no attribute 'now'
+Traceback (most recent call last):
+  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_3/scheduler.py", line 10, in <module>
+    print(f"\n[{datetime.now()}] Starting automated pipeline...")
+                ^^^^^^^^^^^^
+AttributeError: module 'datetime' has no attribute 'now'
+Traceback (most recent call last):
+  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_3/scheduler.py", line 10, in <module>
+    print(f"\n[{datetime.now()}] Starting automated pipeline...")
+                ^^^^^^^^^^^^
+AttributeError: module 'datetime' has no attribute 'now'
+Traceback (most recent call last):
+  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_3/scheduler.py", line 10, in <module>
+    print(f"\n[{datetime.now()}] Starting automated pipeline...")
+                ^^^^^^^^^^^^
+AttributeError: module 'datetime' has no attribute 'now'
+Traceback (most recent call last):
+  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_3/scheduler.py", line 10, in <module>
+    print(f"\n[{datetime.now()}] Starting automated pipeline...")
+                ^^^^^^^^^^^^
+AttributeError: module 'datetime' has no attribute 'now'
+Traceback (most recent call last):
+  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_3/scheduler.py", line 10, in <module>
+    print(f"\n[{datetime.now()}] Starting automated pipeline...")
+                ^^^^^^^^^^^^
+AttributeError: module 'datetime' has no attribute 'now'
+Traceback (most recent call last):
+  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_3/scheduler.py", line 10, in <module>
+    print(f"\n[{datetime.now()}] Starting automated pipeline...")
+                ^^^^^^^^^^^^
+AttributeError: module 'datetime' has no attribute 'now'
+Traceback (most recent call last):
+  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_3/scheduler.py", line 10, in <module>
+    print(f"\n[{datetime.now()}] Starting automated pipeline...")
+                ^^^^^^^^^^^^
+AttributeError: module 'datetime' has no attribute 'now'
+Traceback (most recent call last):
+  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_3/scheduler.py", line 10, in <module>
+    print(f"\n[{datetime.now()}] Starting automated pipeline...")
+                ^^^^^^^^^^^^
+AttributeError: module 'datetime' has no attribute 'now'
+Traceback (most recent call last):
+  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_3/scheduler.py", line 10, in <module>
+    print(f"\n[{datetime.now()}] Starting automated pipeline...")
+                ^^^^^^^^^^^^
+AttributeError: module 'datetime' has no attribute 'now'
+Traceback (most recent call last):
+  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_3/scheduler.py", line 10, in <module>
+    print(f"\n[{datetime.now()}] Starting automated pipeline...")
+                ^^^^^^^^^^^^
+AttributeError: module 'datetime' has no attribute 'now'
+Traceback (most recent call last):
+  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_3/scheduler.py", line 10, in <module>
+    print(f"\n[{datetime.now()}] Starting automated pipeline...")
+                ^^^^^^^^^^^^
+AttributeError: module 'datetime' has no attribute 'now'
+Traceback (most recent call last):
+  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_3/scheduler.py", line 10, in <module>
+    print(f"\n[{datetime.now()}] Starting automated pipeline...")
+                ^^^^^^^^^^^^
+AttributeError: module 'datetime' has no attribute 'now'
+Traceback (most recent call last):
+  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_3/scheduler.py", line 10, in <module>
+    print(f"\n[{datetime.now()}] Starting automated pipeline...")
+                ^^^^^^^^^^^^
+AttributeError: module 'datetime' has no attribute 'now'
+Traceback (most recent call last):
+  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_3/scheduler.py", line 10, in <module>
+    print(f"\n[{datetime.now()}] Starting automated pipeline...")
+                ^^^^^^^^^^^^
+AttributeError: module 'datetime' has no attribute 'now'
+Traceback (most recent call last):
+  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_3/scheduler.py", line 10, in <module>
+    print(f"\n[{datetime.now()}] Starting automated pipeline...")
+                ^^^^^^^^^^^^
+AttributeError: module 'datetime' has no attribute 'now'
+Traceback (most recent call last):
+  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_3/scheduler.py", line 10, in <module>
+    print(f"\n[{datetime.now()}] Starting automated pipeline...")
+                ^^^^^^^^^^^^
+AttributeError: module 'datetime' has no attribute 'now'
+[2025-10-27 19:54:30.342984] Starting automated pipeline...
+[2025-10-27 19:54:30.475129] All new files converted to JSON
+[2025-10-27 19:54:31.268669] All new data inserted successfully!
+[2025-10-27 19:54:31.281816] SQL ERROR: Command '['mysql', 'inato_data', '-e', 'source /home/developer/Workspace_Projects/data_engineer_assignment/level_3/queries.sql']' returned non-zero exit status 1.
+[2025-10-27 19:54:31.281885] Pipeline completed successfully!
+
+[2025-10-27 19:55:18.498731] Starting automated pipeline...
+[2025-10-27 19:55:18.620351] All new files converted to JSON
+[2025-10-27 19:55:19.630622] All new data inserted successfully!
+[2025-10-27 19:55:19.643870] Query.sql executed successfully
+[2025-10-27 19:55:19.643932] Pipeline completed successfully!
 

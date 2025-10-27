@@ -646,3 +646,84 @@ ERROR 1064 (42000) at line 20 in file: '/home/developer/Workspace_Projects/data_
 [2025-10-24 18:49:01.578941] Running query.sql...
 [2025-10-24 18:49:01.590875] Pipeline completed successfully!
 
+Traceback (most recent call last):
+  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_1/solution.py", line 9, in <module>
+    os.makedirs(output_folder, exist_ok=True)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 228, in makedirs
+PermissionError: [Errno 13] Permission denied: '../processed'
+Traceback (most recent call last):
+  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_2/solution.py", line 29, in <module>
+    for filename in os.listdir(processed_folder):
+                    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '../processed'
+mysql: [Warning] Using a password on the command line interface can be insecure.
+site_name	oncology_rate
+New York University Hospital	0.3448
+Lisbon University Hospital	0.3452
+site_name
+Lyon Medical Center
+New York University Hospital
+Los Angeles
+Lisbon University Hospital
+Miami Health Institute
+ERROR 1064 (42000) at line 20 in file: '/home/developer/Workspace_Projects/data_engineer_assignment/level_3/queries.sql': You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '--run via this =>  mysql -u root -p inato_data < queries.sql' at line 1
+
+[2025-10-24 18:50:01.792161] Starting automated pipeline...
+[2025-10-24 18:50:01.932854] Running query.sql...
+[2025-10-24 18:50:01.945872] Pipeline completed successfully!
+
+Traceback (most recent call last):
+  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_1/solution.py", line 9, in <module>
+    os.makedirs(output_folder, exist_ok=True)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 228, in makedirs
+PermissionError: [Errno 13] Permission denied: '../processed'
+Traceback (most recent call last):
+  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_2/solution.py", line 29, in <module>
+    for filename in os.listdir(processed_folder):
+                    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '../processed'
+mysql: [Warning] Using a password on the command line interface can be insecure.
+site_name	oncology_rate
+New York University Hospital	0.3448
+Lisbon University Hospital	0.3452
+site_name
+Lyon Medical Center
+New York University Hospital
+Los Angeles
+Lisbon University Hospital
+Miami Health Institute
+ERROR 1064 (42000) at line 20 in file: '/home/developer/Workspace_Projects/data_engineer_assignment/level_3/queries.sql': You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '--run via this =>  mysql -u root -p inato_data < queries.sql' at line 1
+
+[2025-10-24 18:51:02.126332] Starting automated pipeline...
+[2025-10-24 18:51:02.253867] Running query.sql...
+[2025-10-24 18:51:02.265584] Pipeline completed successfully!
+
+Traceback (most recent call last):
+  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_1/solution.py", line 9, in <module>
+    os.makedirs(output_folder, exist_ok=True)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 228, in makedirs
+PermissionError: [Errno 13] Permission denied: '../processed'
+Traceback (most recent call last):
+  File "/home/developer/Workspace_Projects/data_engineer_assignment/level_2/solution.py", line 29, in <module>
+    for filename in os.listdir(processed_folder):
+                    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '../processed'
+mysql: [Warning] Using a password on the command line interface can be insecure.
+site_name	oncology_rate
+New York University Hospital	0.3448
+Lisbon University Hospital	0.3452
+site_name
+Lyon Medical Center
+New York University Hospital
+Los Angeles
+Lisbon University Hospital
+Miami Health Institute
+ERROR 1064 (42000) at line 20 in file: '/home/developer/Workspace_Projects/data_engineer_assignment/level_3/queries.sql': You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '--run via this =>  mysql -u root -p inato_data < queries.sql' at line 1
+
+[2025-10-24 18:52:01.445199] Starting automated pipeline...
+[2025-10-24 18:52:01.586044] Running query.sql...
+[2025-10-24 18:52:01.598859] Pipeline completed successfully!
+

@@ -17,7 +17,7 @@ It simulates a real-world data ingestion and analytics pipeline, similar to thos
 | Level | Component | Description |
 |--------|------------|-------------|
 | Level 1 | `process_raw.py` | Converts raw pipe-separated data into JSON files |
-| Level 2 | `insert_db.py` | Inserts processed data into MySQL database |
+| Level 2 | `insert_into_database.py` | Inserts processed data into MySQL database |
 | Level 3 | `queries.sql` + `scheduler.py` | Runs analytics queries and automates the entire ETL process |
 | Automation | Cron job | Schedules the pipeline to run every 3 hours automatically |
 
@@ -34,7 +34,7 @@ data_engineer_assignment/
 │   └── process_raw.py
 │
 ├── level_2/
-│   ├── insert_db.py
+│   ├── insert_into_database.py
 │   └── database_connection.py
 │
 ├── level_3/
@@ -74,7 +74,7 @@ python3 level_1/process_raw.py
 
 ---
 
-## Level 2 — Database Insertion (`insert_db.py`)
+## Level 2 — Database Insertion (`insert_into_database.py`)
 
 ### Purpose
 This script inserts the processed JSON files into a MySQL database called `inato_data`.
@@ -87,7 +87,7 @@ This script inserts the processed JSON files into a MySQL database called `inato
 
 ### Run Manually
 ```bash
-python3 level_2/insert_db.py
+python3 level_2/insert_into_database.py
 ```
 
 ### Example Output

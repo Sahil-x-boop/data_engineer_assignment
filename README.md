@@ -1,89 +1,241 @@
-# Inato Data Engineering technical assignment
+# Data Engineer Take-Home Assignment
 
-## How to Successfully Complete this Technical Assignment
+## Automated ETL + Analytics Pipeline (Python + MySQL + Cron)
 
-Follow the steps below to successfully complete the assignment and showcase your skills:
+This project implements a 3-level data pipeline that automatically:
+1. Converts raw application files into structured JSONs  
+2. Inserts new data into a MySQL database  
+3. Runs analytical SQL queries  
+4. Repeats automatically every 3 hours using a Linux cron job  
 
-1. Clone the repository provided (do **not** fork it).
-2. Work through each step, starting with Step 1.
-3. Commit your code at the end of each step to track your progress.
-4. Publish it on your GitHub (or Gitlab, or whatever...)
-5. Send us the link and tell us approximatively how much time you spent on this assignment
+It simulates a real-world data ingestion and analytics pipeline, similar to those used in production-grade data engineering systems.
 
-Note that the test should take no more than 3 hours to complete. 
-The test is simple enough intentionally so you can spend time on making it production ready.
+---
 
+## Project Overview
 
-## Guidelines for Success
+| Level | Component | Description |
+|--------|------------|-------------|
+| Level 1 | `process_raw.py` | Converts raw pipe-separated data into JSON files |
+| Level 2 | `insert_db.py` | Inserts processed data into MySQL database |
+| Level 3 | `queries.sql` + `scheduler.py` | Runs analytics queries and automates the entire ETL process |
+| Automation | Cron job | Schedules the pipeline to run every 3 hours automatically |
 
-To ensure success and demonstrate your abilities, please adhere to the following guidelines:
+---
 
-- Begin with a simple approach to complete the initial steps.
-- Each step builds upon the previous one, allowing you to reuse code when applicable. However, as you progress, focus on refactoring your code to make it maintainable, clean, robust, and reliable.
-- The last state of your code should be clean and ready to be reviewed by peers in a real-world situation
-- Use Python (3.9) to write your code.
-- Write your program within the appropriate level directory.
-- Do not modify the following scripts: `application_generator.py` and `application_file_generator.py`.
-
-
-## Step 1 : Transforming Application Logs
-
-- Run the `application_file_generator.py` program to generate application logs. The logs will be saved in the `./applications/` folder. Each file represents one application and follows this format:
-
-`id=0a0bd4d3-05cf-4912-b6ee-40d79a4f9901|therapeutic_area=oncology|created_at=2023-07-26 18:30:07|site={'name': 'CHU Bordeaux', 'site_category': 'academic'}`
-
-- Your task is to read all these files and transform them into JSON files in the `./processed/application-{id}.json` format. The transformed JSON files should look like this:
-
+## Folder Structure
 ```
-{
-   'id':'0a0bd4d3-05cf-4912-b6ee-40d79a4f9901',
-   'therapeutic_area':'oncology',
-   'created_at':'2023-07-26 18:30:07',
-   'site':{
-      'name':'CHU Bordeaux',
-      'category':'academic'
-   }
-}
+data_engineer_assignment/
+│
+├── applications/                # raw incoming .json-like files
+├── processed/                   # structured JSONs (output of Level 1)
+│
+├── level_1/
+│   └── process_raw.py
+│
+├── level_2/
+│   ├── insert_db.py
+│   └── database_connection.py
+│
+├── level_3/
+│   ├── queries.sql
+│   └── scheduler.py
+│
+├── processed_files.log          # tracks which files have been processed
+├── level_3/pipeline.log         # logs all cron/scheduler activity
+└── README.md
 ```
 
-## Step 2 : Storing Application Logs in a MySQL Database
+---
 
-- Instead of writing the logs to files, we want to store them in a MySQL database.
-- Use the following table schema to create a table named `application`:
+## Level 1 — Data Conversion (`process_raw.py`)
 
+### Purpose
+This script reads raw application files from `applications/`, where each file contains a single line formatted as:
 ```
-CREATE TABLE application(
-   id varchar(100),
-   therapeutic_area varchar(10),
-   created_at timestamp,
-   site_name varchar(50),
-   site_category varchar(20)
+id=123|therapeutic_area=Oncology|created_at=2023-02-14 09:00:00|site={"site_name":"Apollo","site_category":"Academic"}
+```
+
+The script:
+- Parses each key=value pair  
+- Converts it into a structured JSON object  
+- Saves it in `/processed/`  
+- Records the processed filename in `processed_files.log` to avoid duplicate processing  
+
+### Run Manually
+```bash
+python3 level_1/process_raw.py
+```
+
+### Example Output
+```
+[Level 1] All new files converted to JSON
+```
+
+---
+
+## Level 2 — Database Insertion (`insert_db.py`)
+
+### Purpose
+This script inserts the processed JSON files into a MySQL database called `inato_data`.
+
+### Steps Performed
+1. Connects to MySQL using credentials stored in `database_connection.py`
+2. Creates a table named `application` if it doesn't already exist
+3. Reads each JSON file in the `processed/` directory
+4. Inserts only new records based on unique `id` values
+
+### Run Manually
+```bash
+python3 level_2/insert_db.py
+```
+
+### Example Output
+```
+[Level 2] 5 new records inserted successfully!
+```
+
+### Database Table Structure
+
+| Column | Type | Description |
+|--------|------|-------------|
+| id | VARCHAR(100) | Unique identifier |
+| therapeutic_area | VARCHAR(255) | Trial type (e.g., Oncology) |
+| created_at | TIMESTAMP | Record creation time |
+| site_name | VARCHAR(255) | Name of the site |
+| site_category | VARCHAR(255) | Site category (e.g., Academic) |
+
+---
+
+## Level 3 — SQL Analysis (`queries.sql`)
+
+### Purpose
+This file contains analytical SQL queries that extract insights from the `application` table.
+
+### Query 1 — Oncology Ratio
+Finds the ratio of oncology trials to total trials for each academic site.
+```sql
+SELECT 
+    site_name,     
+    SUM(therapeutic_area = 'Oncology') / COUNT(*) AS oncology_rate 
+FROM application 
+WHERE site_category = 'Academic' 
+GROUP BY site_name;
+```
+
+### Query 2 — Active Sites Within 14 Days
+Finds sites with at least 10 applications submitted within 14 days of their first submission.
+```sql
+WITH first_app AS (
+    SELECT site_name, MIN(created_at) AS first_date
+    FROM application
+    GROUP BY site_name
 )
+SELECT a.site_name
+FROM application a
+JOIN first_app f
+  ON a.site_name = f.site_name
+WHERE a.created_at <= DATE_ADD(f.first_date, INTERVAL 14 DAY)
+GROUP BY a.site_name
+HAVING COUNT(*) >= 10;
 ```
 
-## Step 3 : Answering Questions based on the Stored Data
+---
 
-Based on the previously created table, you need to answer the following questions:
+## Level 3 — Scheduler (`scheduler.py`)
 
-- Oncology specialization rate: Calculate the ratio of applications for oncology trials to the total number of applications for each Academic site.
-- List of sites: Provide a list of sites that applied to at least 10 trials during the 14 days following their first application.
+### Purpose
+Automates the entire ETL process by:
+1. Running Level 1 (data conversion)
+2. Running Level 2 (database insertion)
+3. Executing the SQL queries in `queries.sql`
+4. Logging all activity into `pipeline.log`
 
-Write your SQL queries to answer these questions in the level_3/queries.sql file.
+### Run Manually
+```bash
+python3 level_3/scheduler.py
+```
 
-Note:
-- If you haven't completed step 2, you can use the data stored in `./sample/applications_sample.csv`.
-- There is no requirement to set up a database. We will solely focus on the SQL code.
+### Example Output
+```
+[2025-10-24 18:46:32.450257] All new files converted to JSON
+All new data inserted successfully!
+[2025-10-24 18:46:32.841066] Running query.sql...
+[2025-10-24 18:46:32.846725] Pipeline completed successfully!
+```
 
+---
 
-## Data details
+## Automation Using Cron Job
 
-**Trial applications on Inato:**
+### Purpose
+To automate the pipeline to run every 3 hours.
 
-- `id`: application ID
-- `therapeutic_area`: therapeutic area of the study for which the site is applying
-- `created_at`: timestamp when the study application started
-- `site_name`: name of the site who took part in the trial
-- `site_category`: category the site who took part in the trial
+### Steps to Set Up
 
+1. Open the crontab:
+```bash
+crontab -e
+```
 
-## Enjoy the assignment and good luck! ##
+2. Add the following line:
+```bash
+0 */3 * * * /home/developer/.pyenv/shims/python3 /home/developer/Workspace_Projects/data_engineer_assignment/level_3/scheduler.py >> /home/developer/Workspace_Projects/data_engineer_assignment/level_3/pipeline.log 2>&1
+```
+
+3. Save and exit.
+
+This means:
+- The pipeline runs every 3 hours
+- Logs are stored in `pipeline.log`
+
+To verify the cron job is active:
+```bash
+crontab -l
+```
+
+---
+
+## Troubleshooting
+
+| Issue | Cause | Solution |
+|-------|-------|----------|
+| Access denied for user 'developer'@'localhost' | Incorrect MySQL username/password | Update credentials in `database_connection.py` |
+| ModuleNotFoundError | Missing dependencies | Install using `pip install mysql-connector-python` |
+| No JSON files created | `applications/` folder empty | Add raw input files before running Level 1 |
+| Data not updating | Duplicate file entries | Clear or check `processed_files.log` |
+
+---
+
+## Complete Pipeline Flow
+
+1. Raw data → `applications/`
+2. Level 1 converts raw data → `processed/` (JSON format)
+3. Level 2 reads JSON → inserts into `inato_data.application` table
+4. Level 3 runs SQL analytics → saves outputs/logs
+5. Cron job executes the pipeline automatically every 3 hours
+
+---
+
+## Dependencies
+
+- Python 3.10+
+- MySQL Server
+- Required Python modules:
+```bash
+pip install mysql-connector-python
+```
+
+---
+
+## Run the Whole Pipeline Manually (Without Cron)
+```bash
+python3 level_3/scheduler.py
+```
+
+---
+
+## Logs
+
+- `processed_files.log` → Tracks which files were already processed
+- `level_3/pipeline.log` → Stores all run-time logs of ETL + queries

@@ -2,7 +2,7 @@ import subprocess
 from datetime import datetime
 import os
 
-BASE_DIR = "/home/developer/Workspace_Projects/data_engineer_assignment"
+BASE_DIR = os.path.dirname(os.getcwd())
 LEVEL1 = os.path.join(BASE_DIR, "level_1", "process_raw.py")
 LEVEL2 = os.path.join(BASE_DIR, "level_2", "insert_into_database.py")
 QUERY_SQL = os.path.join(BASE_DIR, "level_3", "queries.sql")
@@ -10,7 +10,7 @@ LOG_FILE = os.path.join(BASE_DIR, "level_3", "pipeline.log")
 
 def log(msg):
     with open(LOG_FILE, "a") as f:
-        f.write(f"[{datetime.datetime.now()}] {msg}\n")
+        f.write(f"[{datetime.now()}] {msg}\n")
 
 def run_command(cmd):
     try:
@@ -21,12 +21,11 @@ def run_command(cmd):
 
 log("Starting automated pipeline...")
 
-# Level 1
-subprocess.run(["/home/developer/.pyenv/shims/python3", LEVEL1])
+
+subprocess.run(["python3", LEVEL1])
 log("All new files converted to JSON")
 
-# Level 2
-subprocess.run(["/home/developer/.pyenv/shims/python3", LEVEL2])
+subprocess.run(["python3", LEVEL2])
 log("All new data inserted successfully!")
 
 # Run SQL queries using .my.cnf credentials
